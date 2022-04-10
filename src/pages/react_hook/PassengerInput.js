@@ -1,4 +1,3 @@
-import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, FormControl, InputGroup } from "react-bootstrap";
 import Col from "react-bootstrap/Col";
 

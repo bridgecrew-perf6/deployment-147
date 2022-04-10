@@ -1,15 +1,15 @@
 import Home from "./Home";
-import Penjelasan from "./Penjelasan";
 import Sidebar from "../../component/Sidebar";
+import Penjelasan from "./Penjelasan";
 import "../../component/style.css";
-import capture from "./img/Capture.PNG";
+
 function Index() {
   return (
     <div>
       <Sidebar />
       <div className="container">
         <div className="header">
-          <h1>Event Handling</h1>
+          <h1>React Hooks</h1>
           <nav>
             <div className="nav nav-tabs" id="nav-tab" role="tablist">
               <button
@@ -92,76 +92,62 @@ function Index() {
                     aria-label="Slide 3"
                   />
                 </div>
-                <div className="jarak-menu">
-                  <div className="carousel-inner">
-                    <div className="carousel-item active">
-                      <img
-                        src={capture}
-                        className="d-block w-100"
-                        alt="capture"
-                      />
-                      <div className="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>
-                          Some representative placeholder content for the first
-                          slide.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        src="./img/Capture.PNG"
-                        className="d-block w-100"
-                        alt="..."
-                      />
-                      <div className="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>
-                          Some representative placeholder content for the second
-                          slide.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        src="./img/Capture.PNG"
-                        className="d-block w-100"
-                        alt="..."
-                      />
-                      <div className="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>
-                          Some representative placeholder content for the third
-                          slide.
-                        </p>
-                      </div>
+                <div className="carousel-inner">
+                  <div className="carousel-item active">
+                    <img src="/" className="d-block w-100" alt="capture" />
+                    <div className="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>
+                        Some representative placeholder content for the first
+                        slide.
+                      </p>
                     </div>
                   </div>
-                  <button
-                    className="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev"
-                  >
-                    <span
-                      className="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    />
-                    <span className="visually-hidden">Previous</span>
-                  </button>
-                  <button
-                    className="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next"
-                  >
-                    <span
-                      className="carousel-control-next-icon"
-                      aria-hidden="true"
-                    />
-                    <span className="visually-hidden">Next</span>
-                  </button>
+                  <div className="carousel-item">
+                    <img src="/" className="d-block w-100" alt="..." />
+                    <div className="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>
+                        Some representative placeholder content for the second
+                        slide.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="carousel-item">
+                    <img src="/" className="d-block w-100" alt="..." />
+                    <div className="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>
+                        Some representative placeholder content for the third
+                        slide.
+                      </p>
+                    </div>
+                  </div>
                 </div>
+                <button
+                  className="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    className="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  />
+                  <span className="visually-hidden">Previous</span>
+                </button>
+                <button
+                  className="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next"
+                >
+                  <span
+                    className="carousel-control-next-icon"
+                    aria-hidden="true"
+                  />
+                  <span className="visually-hidden">Next</span>
+                </button>
               </div>
             </div>
             <div
@@ -178,5 +164,4 @@ function Index() {
     </div>
   );
 }
-
 export default Index;

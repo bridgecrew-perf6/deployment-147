@@ -1,5 +1,5 @@
 import Listitem from "./Listitem";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 const ListPassenger = (props) => {
   const { data, hapusPengunjung } = props;
 

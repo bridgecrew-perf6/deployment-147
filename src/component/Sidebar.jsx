@@ -49,7 +49,7 @@ function Sidebar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <a className="nav-link" href="/React_hooks">
                   React Hook
                 </a>
               </li>
