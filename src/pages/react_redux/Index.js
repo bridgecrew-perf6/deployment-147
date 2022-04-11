@@ -1,8 +1,11 @@
-import Home from "./Home";
 import Sidebar from "../../component/Sidebar";
 import Penjelasan from "./Penjelasan";
 import "../../component/style.css";
-import Gambarsatu from "./img/Capture.PNG";
+import { Provider } from "react-redux";
+import { PersistGate } from "redux-persist/integration/react";
+import { store, persistor } from "./store/store";
+import Home from "./component/Home";
+// import Gambarsatu from "./img/Capture.PNG";
 
 function Index() {
   return (
@@ -10,7 +13,7 @@ function Index() {
       <Sidebar />
       <div className="container">
         <div className="header">
-          <h1>React Hooks</h1>
+          <h1>React Redux</h1>
           <nav>
             <div className="nav nav-tabs" id="nav-tab" role="tablist">
               <button
@@ -95,11 +98,7 @@ function Index() {
                 </div>
                 <div className="carousel-inner">
                   <div className="carousel-item active">
-                    <img
-                      src={Gambarsatu}
-                      className="d-block w-100"
-                      alt="capture"
-                    />
+                    <img src="/" className="d-block w-100" alt="capture" />
                     <div className="carousel-caption d-none d-md-block">
                       <h5>First slide label</h5>
                       <p>
@@ -109,7 +108,7 @@ function Index() {
                     </div>
                   </div>
                   <div className="carousel-item">
-                    <img src={Gambarsatu} className="d-block w-100" alt="..." />
+                    <img src="/" className="d-block w-100" alt="..." />
                     <div className="carousel-caption d-none d-md-block">
                       <h5>Second slide label</h5>
                       <p>
@@ -161,7 +160,11 @@ function Index() {
               role="tabpanel"
               aria-labelledby="nav-contact-tab"
             >
-              <Home />
+              <Provider store={store}>
+                <PersistGate loading={null} persistor={persistor}>
+                  <Home />
+                </PersistGate>
+              </Provider>
             </div>
           </div>
         </div>

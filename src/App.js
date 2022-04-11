@@ -2,6 +2,7 @@ import Sidebar from "./component/Sidebar";
 import Eventhandle from "./pages/event_handling/Index";
 import FormReact from "./pages/react_form/Index";
 import ReactHooks from "./pages/react_hook/Index";
+import ReactRedux from "./pages/react_redux/Index";
 import * as React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
@@ -35,6 +36,7 @@ function App() {
         <Route path="/Event_handle" element={<Eventhandle />} />
         <Route path="/Form_react" element={<FormReact />} />
         <Route path="/React_hooks" element={<ReactHooks />} />
+        <Route path="/React_redux" element={<ReactRedux />} />
       </Routes>
       <div>
         {/* <img src={data[0].poster}></img>

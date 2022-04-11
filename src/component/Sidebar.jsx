@@ -22,7 +22,7 @@ function Sidebar() {
         >
           <div className="offcanvas-header">
             <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
-              Offcanvas
+              Main Menu
             </h5>
             <button
               type="button"
@@ -56,6 +56,11 @@ function Sidebar() {
               <li className="nav-item">
                 <a className="nav-link" href="/">
                   React Rooting
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/React_redux">
+                  React Redux
                 </a>
               </li>
             </ul>

@@ -1,52 +1,68 @@
+import { useDispatch } from "react-redux";
+import { tambahPengunjung } from "../store/passengerSlice";
+import { useState } from "react";
+
 import { Button, FormControl, InputGroup } from "react-bootstrap";
 import Col from "react-bootstrap/Col";
 
-import { useState } from "react";
-
 function PassengerInput(props) {
-  const [data, setData] = useState({
+  const dispatch = useDispatch();
+
+  const [state, setState] = useState({
+    id: "",
     title: "",
     completed: false,
+
+    editing: true,
   });
-  const [editing, setEditing] = useState(true);
 
   const onChange = (e) => {
-    setData({
-      ...data,
-
+    console.log("masuk ke onchange");
+    setState({
+      ...state,
       [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    const formIsNotEmpty = data.title;
-    if (formIsNotEmpty) {
-      const newData = {
-        title: data.title,
-      };
-      props.tambahPengunjung(newData);
-      setData({
-        title: "",
-        completed: "",
-      });
+    if (state.title.trim()) {
+      if ("") {
+        alert("Umur tidak sesuai");
+      } else {
+        const newData = {
+          title: state.title,
+          completed: state.completed,
+        };
+
+        dispatch(tambahPengunjung(newData));
+        setState({
+          ...state,
+          title: "",
+        });
+      }
     } else {
-      alert("data masih kosong");
+      alert("Data masih ada yang kosong");
     }
   };
 
   const handleBukaInput = () => {
-    setEditing(false);
+    setState({
+      ...state,
+      editing: false,
+    });
   };
 
   const hanldeTutupInput = () => {
-    setEditing(true);
+    setState({
+      ...state,
+      editing: true,
+    });
   };
 
-  const viewMode = {};
-  const editMode = {};
+  let viewMode = {};
+  let editMode = {};
 
-  if (editing) {
+  if (state.editing) {
     viewMode.display = "none";
   } else {
     editMode.display = "none";
@@ -54,13 +70,13 @@ function PassengerInput(props) {
 
   return (
     <div>
-      <div onSubmit={() => {}} style={viewMode}>
+      <div onSubmit={handleSubmit} style={viewMode}>
         <p>Masukkan Nama Pekerjaan </p>
         <Col md={{ span: 4, offset: 4 }}>
           <InputGroup>
             <FormControl
               type="text"
-              value={data.title}
+              value={state.title}
               name="title"
               onChange={onChange}
             ></FormControl>
