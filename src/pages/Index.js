@@ -96,11 +96,11 @@ function Index() {
                   <div className="card-body">
                     <h5 className="card-title">Figma</h5>
                     <p className="card-text">
-                      This is a longer card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
+                      is a vector graphics editor and prototype tool wich is
+                      primarily web-based, with additional offline feature
+                      enabled by desktop applications for MacOS and Windows ...
                     </p>
-                    <a href="/">Selengkapnya</a>
+                    <a href="/Figma">Selengkapnya</a>
                   </div>
                 </div>
               </div>
@@ -110,12 +110,11 @@ function Index() {
                   <div className="card-body">
                     <h5 className="card-title">HTML</h5>
                     <p className="card-text">
-                      {" "}
-                      This is a longer card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
+                      Hypertext Markup Language adalah bahasa markah standar
+                      untuk dokumen yang dirancang untuk ditampilkan di peramban
+                      internet. Ini dapat dibantu oleh teknologi ...
                     </p>
-                    <a href="/">Selengkapnya</a>
+                    <a href="/Html">Selengkapnya</a>
                   </div>
                 </div>
               </div>
@@ -125,11 +124,11 @@ function Index() {
                   <div className="card-body">
                     <h5 className="card-title">CSS</h5>
                     <p className="card-text">
-                      This is a longer card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
+                      Cascading Style Sheet merupakan aturan untuk mengatur
+                      beberapa komponen dalam sebuah web sehingga akan lebih
+                      terstruktur dan seragam. CSS bukan merupakan ...
                     </p>
-                    <a href="/">Selengkapnya</a>
+                    <a href="/Css">Selengkapnya</a>
                   </div>
                 </div>
               </div>

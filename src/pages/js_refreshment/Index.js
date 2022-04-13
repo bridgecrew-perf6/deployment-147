@@ -1,8 +1,7 @@
 import Penjelasan from "./Penjelasan";
 
 import "../../component/style.css";
-// import Gambarsatu from "./img/gambar-satu.jpeg";
-// import Gambardua from "./img/gambar-dua.jpeg";
+import Gambarsatu from "./img/Capture.PNG";
 
 function Index() {
   return (
@@ -85,7 +84,7 @@ function Index() {
                   <div className="carousel-inner">
                     <div className="carousel-item active">
                       <img
-                        // src={Gambarsatu}
+                        src={Gambarsatu}
                         className="d-block w-100"
                         alt="capture"
                       />

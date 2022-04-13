@@ -4,52 +4,45 @@ function Penjelasan() {
   return (
     <>
       <div style={{ textAlign: "left" }} className="jarak-menu">
-        <h3>Redux Thunk</h3>
+        <h2>Apa itu Versioning</h2>
+
+        <p>mengatur versi dari source code program.</p>
+        <h2>Apa itu GIT</h2>
         <p>
-          Thunk Middleware untuk redux yang memungkinkan kita untuk membuat
-          action creator yang mengembalikan function bukan action Hooks
-          merupakan fitur baru di React 16.8 Dengan Hooks, kita dapat
-          menggunakan state dan fitur React yang lain tanpa perlu menulis sebuah
-          kelas.
+          salah satu version control system populer yang digunakan pada
+          developer untuk mengembangkan sofware secara bersama-sama
         </p>
-        <h3>Waktu yang tepat untuk menggunakan REDUX</h3>
-        <ul>
-          <li>Banyak state yang perlu ditaruh dibanyak tempat</li>
-          <li>State pada app sering berubah</li>
-          <li>Logic untuk mengubah state kompleks</li>
-          <li>Ukuran codebase yang sedang-besar, dan banyak orang</li>
-          <li>Perlu untuk mengetahui bagaimana state dengan waktu</li>
-        </ul>
-        <h3>Redux Libraries dan Tools</h3>
-        <ul>
-          <li>React-Redux</li>
-          <li>React Toolkit</li>
-          <li>Redux DevTools Extension</li>
-        </ul>
-        <h3>Komponen Penting di Redux</h3>
-        <ul>
+        <h2>GIT</h2>
+        <ol>
+          <li>git init = untuk pembuatan folder</li>
+          <li>git remote = untuk sync ke github</li>
+          <li>git add untuk masuk ke staging</li>
+          <li>git commit -m untuk masuk ke packing yang siap dikirim </li>
+          <li>git push masuk ke repository</li>
+          <li>git status untuk cek status git kita</li>
           <li>
-            Actions : digunakan untuk memberikan informasi dari aplikasi ke
-            store.
+            git diff untuk cek di terminal apa saja yang di ubah/diganti pada
+            source code kita.
           </li>
           <li>
-            Reducer : Pure JavaScript functions yang mengambil state aplikasi
-            saat ini dan object action lalu mengembalikan state aplikasi terbaru
+            buat file .gitignore untuk buat atau memilih file atau folder yang
+            tidak perlu di push.
           </li>
-          <li>Store : Obejk sentral yang menyimpan state pada aplikasi</li>
-        </ul>
-        <h3>Notes Kesimpulan</h3>
-        <ul>
-          <li>Redux adalah library untuk menajemen state global</li>
-          <li>Redux menggunakan struktur "one-way data flow"</li>
-          <li>Redux menggunakan beberapa tipe code</li>
-        </ul>
-        <h3>Kenapa Perlu Redux Thunk</h3>
+          <li>git log untuk melihat histori perubah </li>
+          <li>git reset untuk menguncommit file</li>
+          <li>git checkout untuk pindah branch </li>
+          <li>
+            git merge -ff(fast forward) untuk mengambil file yang ada pada
+            master branch ke branch
+          </li>
+          <li>git branch featureA (nambah branch)</li>
+        </ol>
+        <h2>
+          Note <em>GIT</em>
+        </h2>
         <p>
-          Untuk menghandle side effect logic seperti logic synchronous kompleks
-          yang perlu mengakses store dan juga logic async seperti request data.
-          membuat Hooks kita sendiri memungkinkan kita mengekstrak komponen
-          logika ke fungsi yang dapat digunakan lagi.
+          Development sebaiknya jangan di branch master, tetapi di branch
+          Developmetn atau dipecah kembali sesuai dengan fitur&quot;nya.
         </p>
       </div>
       ;

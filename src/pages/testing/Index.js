@@ -10,7 +10,7 @@ function Index() {
     <div>
       <div className="container">
         <div className="header">
-          <h1>HTML</h1>
+          <h1>React Testing</h1>
 
           <nav>
             <div className="nav nav-tabs" id="nav-tab" role="tablist">

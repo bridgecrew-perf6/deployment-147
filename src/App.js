@@ -13,7 +13,8 @@ import Html from "./pages/html/Index";
 import JavascriptRs from "./pages/js_refreshment/Index";
 import IntroductionReact from "./pages/introduction_react/Index";
 import ReactFundamental from "./pages/react_fundamental/Index";
-
+import Testing from "./pages/testing/Index";
+import Deployment from "./pages/deployment/Index";
 import * as React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
@@ -59,6 +60,8 @@ function App() {
         <Route path="/Javascript_refreshment" element={<JavascriptRs />} />
         <Route path="/Introduction_react" element={<IntroductionReact />} />
         <Route path="/React_fundamental" element={<ReactFundamental />} />
+        <Route path="/Testing" element={<Testing />} />
+        <Route path="/Deployment" element={<Deployment />} />
       </Routes>
 
       <div>

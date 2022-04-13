@@ -113,6 +113,16 @@ function Sidebar() {
                   React Fundamental
                 </a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/Testing">
+                  React Testing
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/Deployment">
+                  Deployment
+                </a>
+              </li>
             </ul>
           </div>
         </div>

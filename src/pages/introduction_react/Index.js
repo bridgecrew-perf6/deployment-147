@@ -1,8 +1,9 @@
 import Penjelasan from "./Penjelasan";
 
 import "../../component/style.css";
-// import Gambarsatu from "./img/gambar-satu.jpeg";
-// import Gambardua from "./img/gambar-dua.jpeg";
+import Gambarsatu from "./img/home.PNG";
+import Gambardua from "./img/GIT.jpeg";
+import Gambartiga from "./img/contact.PNG";
 
 function Index() {
   return (
@@ -85,7 +86,7 @@ function Index() {
                   <div className="carousel-inner">
                     <div className="carousel-item active">
                       <img
-                        // src={Gambarsatu}
+                        src={Gambarsatu}
                         className="d-block w-100"
                         alt="capture"
                       />
@@ -99,7 +100,21 @@ function Index() {
                     </div>
                     <div className="carousel-item">
                       <img
-                        // src={Gambardua}
+                        src={Gambardua}
+                        className="d-block w-100"
+                        alt="..."
+                      />
+                      <div className="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>
+                          Some representative placeholder content for the second
+                          slide.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="carousel-item">
+                      <img
+                        src={Gambartiga}
                         className="d-block w-100"
                         alt="..."
                       />
