@@ -1,5 +1,5 @@
 import FormReact from "./FormReact";
-import Sidebar from "../../component/Sidebar";
+
 import Penjelasan from "./Penjelasan";
 import "../../component/style.css";
 import Gambarsatu from "./img/1.PNG";
@@ -9,7 +9,6 @@ import Gambartiga from "./img/3.PNG";
 function Index() {
   return (
     <div>
-      <Sidebar />
       <div className="container">
         <div className="header">
           <h1>React Form</h1>

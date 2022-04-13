@@ -1,13 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Footer from "./component/Footer";
+import Sidebar from "./component/Sidebar";
 import "./index.css";
+
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
   <BrowserRouter>
+    <Sidebar />
     <App />
+    <Footer />
   </BrowserRouter>,
   document.getElementById("root")
 );

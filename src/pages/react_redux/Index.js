@@ -1,4 +1,3 @@
-import Sidebar from "../../component/Sidebar";
 import Penjelasan from "./Penjelasan";
 import "../../component/style.css";
 import { Provider } from "react-redux";
@@ -10,7 +9,6 @@ import Home from "./component/Home";
 function Index() {
   return (
     <div>
-      <Sidebar />
       <div className="container">
         <div className="header">
           <h1>React Redux</h1>

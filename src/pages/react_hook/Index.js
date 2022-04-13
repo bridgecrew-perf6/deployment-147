@@ -1,5 +1,5 @@
 import Home from "./Home";
-import Sidebar from "../../component/Sidebar";
+
 import Penjelasan from "./Penjelasan";
 import "../../component/style.css";
 import Gambarsatu from "./img/Capture.PNG";
@@ -7,7 +7,6 @@ import Gambarsatu from "./img/Capture.PNG";
 function Index() {
   return (
     <div>
-      <Sidebar />
       <div className="container">
         <div className="header">
           <h1>React Hooks</h1>

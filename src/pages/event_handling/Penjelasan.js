@@ -51,6 +51,7 @@ function Penjelasan() {
             </tr>
           </tbody>
         </table>
+        
         <h3>Stateful & Stateless Component</h3>
         <table className="table table-striped">
           <thead>

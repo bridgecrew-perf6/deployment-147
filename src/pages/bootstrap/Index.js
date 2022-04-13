@@ -1,14 +1,15 @@
-import Home from "./Home";
-import Penjelasan from "./Penjelasan";
+import Penjelasan from "./penjelasan";
 
 import "../../component/style.css";
-import capture from "./img/Capture.PNG";
+import Gambarsatu from "./img/gambar-satu.jpeg";
+import Gambardua from "./img/gambar-dua.jpeg";
+
 function Index() {
   return (
     <div>
       <div className="container">
         <div className="header">
-          <h1>Event Handling</h1>
+          <h1>Bootstrap</h1>
           <nav>
             <div className="nav nav-tabs" id="nav-tab" role="tablist">
               <button
@@ -34,18 +35,6 @@ function Index() {
                 aria-selected="false"
               >
                 Screen Shoot
-              </button>
-              <button
-                className="nav-link"
-                id="nav-contact-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-contact"
-                type="button"
-                role="tab"
-                aria-controls="nav-contact"
-                aria-selected="false"
-              >
-                Project
               </button>
             </div>
           </nav>
@@ -95,7 +84,7 @@ function Index() {
                   <div className="carousel-inner">
                     <div className="carousel-item active">
                       <img
-                        src={capture}
+                        src={Gambarsatu}
                         className="d-block w-100"
                         alt="capture"
                       />
@@ -109,7 +98,7 @@ function Index() {
                     </div>
                     <div className="carousel-item">
                       <img
-                        src="./img/Capture.PNG"
+                        src={Gambardua}
                         className="d-block w-100"
                         alt="..."
                       />
@@ -117,20 +106,6 @@ function Index() {
                         <h5>Second slide label</h5>
                         <p>
                           Some representative placeholder content for the second
-                          slide.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        src="./img/Capture.PNG"
-                        className="d-block w-100"
-                        alt="..."
-                      />
-                      <div className="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>
-                          Some representative placeholder content for the third
                           slide.
                         </p>
                       </div>
@@ -168,9 +143,7 @@ function Index() {
               id="nav-contact"
               role="tabpanel"
               aria-labelledby="nav-contact-tab"
-            >
-              <Home />
-            </div>
+            ></div>
           </div>
         </div>
       </div>

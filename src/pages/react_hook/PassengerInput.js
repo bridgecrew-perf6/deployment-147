@@ -20,7 +20,7 @@ function PassengerInput(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const formIsNotEmpty = data.title;
+    const formIsNotEmpty =  data.title;
     if (formIsNotEmpty) {
       const newData = {
         title: data.title,

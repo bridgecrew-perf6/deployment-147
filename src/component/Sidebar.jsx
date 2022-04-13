@@ -63,6 +63,56 @@ function Sidebar() {
                   React Redux
                 </a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/Version_control">
+                  Version Control
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/Introduction_uiux">
+                  Introduction UI / UX
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/Figma">
+                  Figma
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/Html">
+                  HTML
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/Css">
+                  CSS
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/Bootstrap">
+                  Bootstrap
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/Javascript_refreshment">
+                  Javascript Refreshment
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/Clean_code">
+                  Clean Code
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/Introduction_react">
+                  Introduction React
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/React_fundamental">
+                  React Fundamental
+                </a>
+              </li>
             </ul>
           </div>
         </div>
